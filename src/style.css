@@ -1,0 +1,172 @@
+* {
+  color: white;
+}
+
+h1 {
+  text-align: center;
+}
+
+#app {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background: black;
+}
+
+#app header {
+  padding: 10px 0;
+}
+
+#app header h1 span {
+  color: #eec64c;
+}
+
+#app header h1 span:first-child {
+  color: #00ea95;
+}
+
+#app header h1 span:last-child {
+  color: #1859dd;
+}
+
+#app footer {
+  padding: 10px 0;
+}
+
+#app footer p {
+  text-decoration: wavy #00ea95;
+}
+
+#app main {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 20px 0;
+}
+
+#app main section.people {
+  flex: 0.5;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+#app main section.people .card {
+  width: 300px;
+  height: 300px;
+  padding: 8px 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #00ea95;
+  border-radius: 4px;
+  box-shadow: 0 0 2px #00ea95, 0 0 4px #00ea95, 0 0 8px #00ea95, 0 0 16px #00ea95, 0 0 4px #00ea95 inset, 0 0 8px #00ea95 inset;
+}
+
+#app main section.people .card .card-header h2 {
+  color: #eec64c;
+  text-shadow: 0 0 2px #eec64c, 0 0 4px #00ea95, 0 0 4px #1859dd;
+}
+
+#app main section.people .card .card-main {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#app main section.people .card .card-main img {
+  width: 100px;
+  height: 100px;
+}
+
+#app main section.people .card .card-main p {
+  text-align: center;
+  font-size: 16px;
+}
+
+#app main section.people .card .card-main a {
+  width: 100%;
+  text-align: center;
+  padding: 2px 0;
+  border: 1px solid #eec64c;
+  border-radius: 4px;
+  background: #1859dd;
+  transition: 1s;
+}
+
+#app main section.people .card .card-main a:hover {
+  transform: scale(1.1);
+}
+
+#app main section.people .card .card-footer {
+  width: 100%;
+}
+
+#app main section.people .card .card-footer ul {
+  width: 100%;
+  display: flex;
+}
+
+#app main section.people .card .card-footer ul li {
+  margin-left: 4px;
+  padding: 4px 8px;
+  border-radius: 10px;
+}
+
+#app main section.people .card .card-footer ul li.card-tag-student {
+  background: #00ea95;
+  box-shadow: 0 0 2px #00ea95, 0 0 4px #00ea95, 0 0 8px #00ea95;
+}
+
+#app main section.people .card .card-footer ul li.card-tag-fe {
+  background: #eec64c;
+  box-shadow: 0 0 2px #eec64c, 0 0 4px #eec64c, 0 0 8px #eec64c;
+}
+
+#app main section.people .card .card-footer ul li.card-tag-prof {
+  background: #1859dd;
+  box-shadow: 0 0 2px #1859dd, 0 0 4px #1859dd, 0 0 8px #1859dd;
+}
+
+#app main section.projects .tabmenu {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+
+#app main section.projects .tabmenu button {
+  flex: 1;
+  padding: 20px 0;
+  border: 1px solid white;
+  font-size: 20px;
+  outline: none;
+  background: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#app main section.projects .tabmenu button:hover {
+  background-color: #00ea95;
+}
+
+#app main section.projects .tabmenu button.active {
+  background-color: #eec64c;
+}
+
+#app main section.projects .tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #1859dd;
+  border-top: none;
+  text-align: center;
+}

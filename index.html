@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Mindera School Example</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/css-free-style@1.3.0/build/reset.min.css">
+	<link rel="stylesheet" href="./src/style.min.css">
+</head>
+
+<body>
+	<div id="app">
+		<header>
+			<h1><span>Mindera</span> <span>School</span> <span>Example</span></h1>
+		</header>
+
+		<main>
+			<section class="people">
+				<div class="card">
+					<div class="card-header">
+						<h2>Beep</h2>
+					</div>
+
+					<div class="card-main">
+						<img src="https://via.placeholder.com/100x100.png" alt="Beep">
+						<p>Mini Descrição</p>
+						<a href="#">Ver Mais</a>
+					</div>
+
+					<div class="card-footer">
+						<ul class="tags">
+							<li class="card-tag-student">Aluno</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="card-header">
+						<h2>Edgar</h2>
+					</div>
+
+					<div class="card-main">
+						<img src="./Edgar/Profile.png" alt="Edgar">
+						<p>Mini Descrição</p>
+						<a href="#">Ver Mais</a>
+					</div>
+
+					<div class="card-footer">
+						<ul class="tags">
+							<li class="card-tag-fe">Front-End</li>
+							<li class="card-tag-prof">Professor</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="card-header">
+						<h2>Flávio Silva</h2>
+					</div>
+
+					<div class="card-main">
+						<img src="./Flavio/Flavio.jpg" alt="Flávio Silva">
+						<p>Mini Descrição</p>
+						<a href="./Flavio/index.html">Ver Mais</a>
+					</div>
+
+					<div class="card-footer">
+						<ul class="tags">
+							<li class="card-tag-fe">Front-End</li>
+							<li class="card-tag-prof">Professor</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="card-header">
+						<h2>Sara Cardozo</h2>
+					</div>
+
+					<div class="card-main">
+						<img src="./Sara/Profile.jpg" alt="Sara Cardoso">
+						<p>Quero mais camisolas! - Flávio :)</p>
+						<a href="#">Ver Mais</a>
+					</div>
+
+					<div class="card-footer">
+						<ul class="tags">
+							<li class="card-tag-prof">"Professora"</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<section class="projects">
+				<div class="tabmenu">
+					<button class="tablinks" onclick="changeProject(event, 'ToDoList')">ToDoList</button>
+					<button class="tablinks"
+						onclick="changeProject(event, 'BasicAppExercises')">BasicAppExercises</button>
+					<button class="tablinks" onclick="changeProject(event, 'StarWarsRoll')">StarWarsRoll</button>
+				</div>
+
+				<div id="ToDoList" class="tabcontent">
+					<h2><a href="https://github.com/mindera-school/MS5-To-Do-List">To Do List</a></h2>
+					<h3>Made by the class</h3>
+					<iframe src="https://mindera-school.github.io/MS5-To-Do-List/" title="To Do List" width="100%"
+						height="500px"></iframe>
+				</div>
+
+				<div id="BasicAppExercises" class="tabcontent">
+					<h2><a href="https://github.com/mindera-school/MS5-Basic-App-Exercises">Basic App Exercises</a></h2>
+					<h3>Made by <a href="https://github.com/Gabriel-Sous-a">Gabriel Sousa</a></h3>
+					<iframe src="https://mindera-school.github.io/MS5-Basic-App-Exercises/" title="" width="100%"
+						height="500px"></iframe>
+				</div>
+
+				<div id="StarWarsRoll" class="tabcontent">
+					<h2><a
+							href="https://github.com/mindera-school/MS5-FE-Vanilla-Exercicies/tree/main/StarWarsRoll">StarWarsRoll</a>
+					</h2>
+					<h3>Made by <a href="https://github.com/LeoHabs">Leonardo Teixeira</a></h3>
+					<iframe src="https://mindera-school.github.io/MS5-FE-Vanilla-Exercicies/StarWarsRoll/" title=""
+						width="100%" height="500px"></iframe>
+				</div>
+			</section>
+		</main>
+
+		<footer>
+			<p><a href="https://school.mindera.com/">We craft software with people we love.</a></p>
+		</footer>
+	</div>
+
+	<script src="./src/script.js"></script>
+</body>
+
+</html>
